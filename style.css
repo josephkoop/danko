@@ -1,0 +1,35 @@
+
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    overflow: hidden;
+}
+
+li{
+    margin-left: 10px;
+}
+
+li a:hover{
+    background-color: gray;
+}
+
+li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+li{
+    color: white;
+}
