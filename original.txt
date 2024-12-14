@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Danko Energie Systeme</title>
+</head>
+
+<heading>
+    <ul class="navigation">
+        <div class="left">
+            <li id="logo"><a href="index.html"><img id="logo2" src="logo.png" alt="logo"/></a></li>
+            <li id="bname"><a href="index.html">Danko Energie Systeme</a></li>
+        </div>
+        <div class="right">
+            <li class="menu-item"><a href="index.html">Home</a></li>
+            <li class="menu-item"><a href="products.html">Products</a></li>
+            <li class="menu-item"><a href="login.html">Log In</a></li>
+        </div>
+        </ul>
+</heading>
+<body>
+
+<section>
+<h1>Products</h1>
+
+<div class="market">
+<img class="productImages" src="photos/bushhog.jpeg"></img>
+<h2>Bushhogs</h2>
+<p>Add description.</p>
+</div>
+
+<div class="market">
+<img class="productImages" src="photos/driller.jpeg"></img>
+<h2>Drilling Machines</h2>
+<p>Add description.</p>
+</div>
+
+<div class="market">
+<img class="productImages" src="photos/semi.png"></img>
+<h2>Semi Trailers</h2>
+<p>Add description.</p>
+</div>
+
+</section>
+
+<script src="products_script.js"></script>
+</body>
+</html>
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #918119;
+    overflow: hidden;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.left, .right{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.right{
+    padding-right: 20px;
+}
+
+#logo, #bname{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.navigation .menu-item a{
+    color: black;
+    font-size: 20px;
+    padding: 14px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.navigation .left a{
+    text-decoration: none;
+    color: black;
+}
+
+#logo{
+    margin-left: 20px;
+}
+
+.navigation .menu-item a:hover{
+    background-color: darkgrey;
+}
+
+#logo2{
+    max-height: 60px;
+    max-width: auto;
+}
+
+section{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    background-color: #edf0a8;
+    padding: 10px 0 50px 0;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.images{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    max-height: 50vh;
+    width: auto;
+    max-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.productImages{
+    grid-area: image;
+    display: block;
+    margin-left: 5%;
+    height: auto;
+    max-height: 100vh;
+    width: auto;
+    max-width: 90%;
+}
+
+.market{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 9fr;
+    grid-template-areas:
+        "image heading"
+        "image paragraph";
+    gap: 10px;
+    padding: 40px;
+    border-top-style: solid;
+    border-color:black;
+    border-width: 2px;
+}
+
+.market h2{
+    grid-area: heading;
+    margin: 0;
+    text-align: center;
+    justify-self: center;
+}
+
+.market p{
+    grid-area: paragraph;
+    margin: 0;
+    max-height: none;
+    overflow: visible;
+    justify-self: center;
+}
+
+.visible{
+    opacity: 1;
+}
+
+p{
+    width: 75%;
+    margin: 0 auto;
+    font-size: x-large;
+}
+
+.contact{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    list-style: none;
+    font-size: 15px;
+}
+
+.contact li{
+    flex: 1;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.icon{
+    height: 30px;
+    width: auto;
+}
+
+.contact a{
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width: 768px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    section{
+        width: 90%;
+        box-sizing: border-box;
+    }
+    
+    .navigation{
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .navigation .menu-item{
+        margin: 5px;
+    }
+
+    .contact{
+        flex-direction: column;
+    }
+
+    .market{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "image"
+            "heading"
+            "paragraph";
+        gap: 5px;
+    }
+
+    .productImages{
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+}

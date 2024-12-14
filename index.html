@@ -7,16 +7,63 @@
     <title>Danko Energie Systeme</title>
 </head>
 
-<heading>
-    <h1>Danko Energie Systeme</h1>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Log In</a></li>
+<header>
+    <ul class="navigation">
+        <div class="left">
+            <li id="logo"><a href="index.html"><img id="logo2" src="icons/logo.png" alt="logo"/></a></li>
+            <li id="bname"><a href="index.html">Danko Energie Systeme</a></li>
+        </div>
+        <div class="h-menu" onclick="toggleMenu()">
+            ☰
+        </div>
+        <div class="right" id="menu">
+            <li class="menu-item"><a href="index.html">Home</a></li>
+            <li class="menu-item"><a href="projects.html">Projects</a></li>
+            <li class="menu-item"><a href="products.html">Products</a></li>
+        </div>
     </ul>
-</heading>
-
+</header>
 <body>
+
+<section class="main-section">
+<h1>Danko Energie Systeme</h1>
+<img id="slideshow" class="images" src="photos/bushhog.jpg"></img>
+<br>
+<p class="intro-paragraph">
+    Danko Energie Systeme is a leading manufacturing company 
+    based in Spanish Lookout, Belize, dedicated to producing innovative
+    renewable energy solutions. Our expertise extends 
+    beyond energy projects to include the design and fabrication 
+    of high-quality farm equipment, semi-trailers, and buildings.
+    For more detailed information on 
+    the industrial equipment currently available, head over to the 
+    Products page. Visits the Projects page to explore energy projects that
+    we've successfully completed.
+</p>
+<ul class="contact">
+    <div>
+        <a href="https://maps.app.goo.gl/ZGJLxCCtxxkSzYZH6"><img class="icon" src="icons/maps.jpg" alt="Maps Icon"/>
+        <li><a href="https://maps.app.goo.gl/ZGJLxCCtxxkSzYZH6">Spanish Lookout, BZ</a></li>
+    </div>
+    <!--
+    <div>
+        <a href="https://bz.linkedin.com/in/daniel-koop-a37b54162"><img class="icon" src="linkedin.png" alt="LinkedIn Icon"/></a>
+        <li><a href="https://bz.linkedin.com/in/daniel-koop-a37b54162">Daniel Koop</a></li>
+    </div>
+    -->
+    <div>
+        <a href="mailto:dankoenergie@gmail.com"><img class="icon" src="icons/email.png" alt="Email Icon"/></a>
+        <li><a href="mailto:dankoenergie@gmail.com">dankoenergie@gmail.com</a></li>
+    </div>
+    <div>
+        <a href="https://wa.me/5018230544"><img class="icon" src="icons/phone.png" alt="Phone Icon"/></a>
+        <li><a href="https://wa.me/5018230544">(501) 823-0544</a></li>
+    </div>
+</ul>
+
+</section>
+
+
+<script src="script.js"></script>
 </body>
 </html>
